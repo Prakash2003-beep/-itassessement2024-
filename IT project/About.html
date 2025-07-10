@@ -1,0 +1,141 @@
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Explore NEPAL</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="hero">
+    <div class="overlay">
+      <nav class="navbar">
+        <div class="logo">Explore NEPAL</div>
+        <ul class="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="Tours.html">Tours</a></li>
+          <li><a href="Gallery.html">Gallery</a></li>
+          <li><a href="About.html">About</a></li>
+        </ul>
+      </nav>
+      <div class="hero-content">
+        <h1>Explor on Your Dream Journey</h1>
+        <p>Discover unforgettable travel experiences all over Nepal.</p>
+      </div>
+    </div>
+  </header>
+
+  <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>About - Travel All Over Nepal</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f4f4f4;
+      margin: 0;
+      padding: 0;
+    }
+
+    header {
+      background-color: #2c3e50;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+
+    .about-section {
+      max-width: 1000px;
+      margin: auto;
+      padding: 30px;
+      background: white;
+    }
+
+    .about-section img {
+      max-width: 300px;
+      width: 100%;
+      border-radius: 10px;
+      margin: 10px;
+    }
+
+    .gallery {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+
+    .game-section {
+      margin-top: 40px;
+      padding: 20px;
+      background: #ecf0f1;
+      border-radius: 10px;
+    }
+
+    .game-section h3 {
+      margin-bottom: 10px;
+    }
+
+    .question {
+      font-weight: bold;
+    }
+
+    button {
+      padding: 10px 20px;
+      background: #3498db;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      margin-top: 10px;
+    }
+
+    #result {
+      margin-top: 10px;
+      font-weight: bold;
+      color: green;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>About Our Travel Adventure</h1>
+    <p>Explore the beauty of Nepal with us — from mountains to jungles!</p>
+  </header>
+
+  <section class="about-section">
+    <h2>Our Mission</h2>
+    <p>We are dedicated to offering unforgettable travel adventures across Nepal. From trekking the Himalayas to exploring cultural cities and national parks, we help you connect with nature and heritage in the most exciting way possible.</p>
+
+    <h2>Popular Places We Cover</h2>
+    <div class="gallery">
+      <img src="images/pokhara.jpg" alt="Pokhara">
+      <img src="images/lumbini.jpg" alt="Lumbini">
+      <img src="images/everest.jpg" alt="Mount Everest">
+      <img src="images/chitwan.jpg" alt="Chitwan">
+    </div>
+
+    <div class="game-section">
+      <h3>🎮 Guess the Place - Mini Quiz Game</h3>
+      <p class="question" id="question">Which city is famous for Fewa Lake and mountain views?</p>
+      <input type="text" id="answer" placeholder="Your answer here" />
+      <button onclick="checkAnswer()">Submit</button>
+      <p id="result"></p>
+    </div>
+  </section>
+
+  <script>
+    function checkAnswer() {
+      const userAnswer = document.getElementById("answer").value.toLowerCase();
+      const correctAnswer = "pokhara";
+
+      if (userAnswer === correctAnswer) {
+        document.getElementById("result").textContent = "✅ Correct! Pokhara is the right answer.";
+      } else {
+        document.getElementById("result").textContent = "❌ Try again! Hint: It starts with 'P'.";
+      }
+    }
+  </script>
+
+</body>
+</html>
